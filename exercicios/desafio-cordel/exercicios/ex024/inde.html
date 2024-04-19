@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on>
+        <p><label for="inome">nome</label> <input type="text" name="nome" id="inome" autocomplete="username"></p>
+        <p><label for="isobrenome">sobrenome</label> <input type="text" name="sobrenome" id="isobrenome" autocomplete="current-password"></p>
+        <input type="submit" value="enviar">
+            <p>
+                <label for="inivel">nivel de satisfação</label>
+                <input type="range" name="nivel" id="inivel"><br>
+                <label for="ifoto">foto de perfil:</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+            <p>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="in1">Numero 1:</label>
+                <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML =Number(in1 + value) + Number(in2 + value)">
+            </p>
+            <p>
+                <label for="in2">Numero 2:</label>
+                <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML=Number(in1 + value) + Number(in2 + value)">
+             </p>
+
+             <p>
+                <label for="isoma"> Soma;</label>
+                <output name="soma" id="isoma"></output>
+            </p>
+            <script>
+                Function calcIdade(){
+                    
+                }
+                }
+            </script>
+            
+
+    </form>
+</body>
+</html>
